@@ -1,9 +1,8 @@
+# https://ropenscilabs.github.io/actions_sandbox/websites-using-pkgdown-bookdown-and-blogdown.html
 on:
   push:
      branches:
        - master
-
-
 
 name: deployblog
 
