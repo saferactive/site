@@ -38,7 +38,7 @@ hero_media = "https://raw.githubusercontent.com/saferactive/trafficalmr/master/v
 #   Remove a link/note by deleting a cta/note block.
 [cta]
   url = "https://github.com/saferactive/saferactive"
-  label = "Get Started"
+  label = "See the code"
   icon_pack = "fas"
   icon = "arrow-right"
   
