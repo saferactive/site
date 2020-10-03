@@ -1,6 +1,6 @@
 ---
 # Display name
-name: Nelson Bighetti
+name: Robin Lovelace
 
 # Username (this should match the folder name)
 authors:
@@ -14,7 +14,7 @@ role: Professor of Artificial Intelligence
 
 # Organizations/Affiliations
 organizations:
-- name: Stanford University
+- name: University of Leeds
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
