@@ -4,14 +4,9 @@
 #   The weight parameter defines the order that the links will appear in.
 
 [[main]]
-  name = "Demo"
+  name = "trafficalmr package"
   url = "#hero"
   weight = 10
-
-[[main]]
-  name = "Posts"
-  url = "#posts"
-  weight = 20
 
 [[main]]
   name = "Projects"
@@ -24,9 +19,9 @@
   weight = 40
 
 [[main]]
-  name = "Courses"
-  url = "courses/"
-  weight = 50
+  name = "About"
+  url = "about/"
+  weight = 5
 
 [[main]]
   name = "Contact"
