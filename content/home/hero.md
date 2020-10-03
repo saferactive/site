@@ -5,10 +5,10 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 10  # Order that this section will appear.
 
-title = "Academic"
+title = "SaferActive"
 
 # Hero image (optional). Enter filename of an image in the `static/img/` folder.
-hero_media = "hero-academic.png"
+hero_media = "https://raw.githubusercontent.com/saferactive/trafficalmr/master/vignettes/closeup_cas_more2_2010-2019_junc_and_road.png"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -17,11 +17,11 @@ hero_media = "hero-academic.png"
   #   Any HTML color name or Hex value is valid.
 
   # Background color.
-  # color = "navy"
+  # color = "lightblue"
   
   # Background gradient.
-  gradient_start = "#4bb4e3"
-  gradient_end = "#2b94c3"
+  gradient_start = "lightblue"
+  gradient_end = "darkblue"
   
   # Background image.
   # image = ""  # Name of image in `static/img/`.
@@ -37,22 +37,19 @@ hero_media = "hero-academic.png"
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [cta]
-  url = "https://sourcethemes.com/academic/docs/install/"
+  url = "https://github.com/saferactive/saferactive"
   label = "Get Started"
   icon_pack = "fas"
-  icon = "download"
+  icon = "arrow-right"
   
 [cta_alt]
-  url = "https://sourcethemes.com/academic/"
+  url = "https://saferactive.github.io/trafficalmr/"
   label = "View Documentation"
 
-# Note. An optional note to show underneath the links.
-[cta_note]
-  label = '<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>'
 +++
 
 **Road Safety Research to Inform Active Travel Interventions**
 
 With a focus on **Reproducibility** and **Rigor**
 
-<span style="text-shadow: none;"><a class="github-button" href="https://github.com/gcushen/hugo-academic" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a><script async defer src="https://buttons.github.io/buttons.js"></script></span>
+<span style="text-shadow: none;"><a class="github-button" href="https://github.com/saferactive/trafficalmr" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a><script async defer src="https://buttons.github.io/buttons.js"></script></span>
