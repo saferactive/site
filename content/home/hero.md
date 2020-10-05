@@ -17,11 +17,12 @@ hero_media = "https://raw.githubusercontent.com/saferactive/trafficalmr/master/v
   #   Any HTML color name or Hex value is valid.
 
   # Background color.
-  # color = "lightblue"
+  # color = "navy"
   
   # Background gradient.
-  gradient_start = "lightblue"
-  gradient_end = "darkblue"
+  gradient_start = "#4bb4e3"
+  gradient_end = "#2b94c3"
+  
   
   # Background image.
   # image = ""  # Name of image in `static/img/`.
@@ -48,7 +49,7 @@ hero_media = "https://raw.githubusercontent.com/saferactive/trafficalmr/master/v
 
 +++
 
-**Road Safety Research to Inform Active Travel Interventions**
+**Reproducible Road Safety Research**
 
 With a focus on **Reproducibility** and **Rigor**
 
