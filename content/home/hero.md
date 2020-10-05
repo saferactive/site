@@ -38,19 +38,19 @@ hero_media = "https://raw.githubusercontent.com/saferactive/trafficalmr/master/v
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [cta]
-  url = "https://github.com/saferactive/saferactive"
-  label = "See the code"
+  url = "https://docs.ropensci.org/stats19/#installation"
+  label = "Install stats19"
   icon_pack = "fas"
-  icon = "arrow-right"
+  icon = "download"
   
 [cta_alt]
-  url = "https://saferactive.github.io/trafficalmr/"
-  label = "View Documentation"
+  url = "https://rstudio.com/products/rstudio/download/#download"
+  label = "Install R+RStudio"
 
 +++
 
-**Reproducible Road Safety Research**
+**Road Safety Research <br>for Active Travel Planning**
 
-With a focus on **Reproducibility** and **Rigor**
+With a focus on **Reproducibility**
 
-<span style="text-shadow: none;"><a class="github-button" href="https://github.com/saferactive/trafficalmr" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a><script async defer src="https://buttons.github.io/buttons.js"></script></span>
+<span style="text-shadow: none;"><a class="github-button" href="https://github.com/ropensci/stats19" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a><script async defer src="https://buttons.github.io/buttons.js"></script></span>
