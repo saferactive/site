@@ -49,6 +49,7 @@ cp -Rv inst/rmd/pct-slides* ~/saferactive/site/static/slides/
 cp -Rv inst/rmd/libs ~/saferactive/site/static/slides/
 cd ~/saferactive/site
 git add -A
+git status
 git commit -am 'Update slides'
 git push
 cd -
@@ -270,6 +271,18 @@ Uses that were not initially planned
 #### Many use cases on the PCT website: [pct.bike/manual.html](https://www.pct.bike/manual.html)
 
 - Case studies of over a dozen areas, including Greater Manchester and Herefordshire in the manual
+
+---
+
+## Estimating health benefits of cycling uptake with the PCT
+
+- The PCT uses a modified version of the HEAT methodology to calculate health benefits of scenarios of change
+- Based on the DfT's TAG methodology
+- The scenarios are **what if** scenarios not forecasts 
+- See the PCT manual for further information: [pct.bike/manual.html](https://npct.github.io/pct-shiny/regions_www/www/static/03a_manual/pct-bike-eng-user-manual-c1.pdf)
+- See the DfT's [AMAT tool](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/888754/amat-user-guidance.pdf) also
+
+![](https://user-images.githubusercontent.com/1825120/96588892-15a25f80-12dc-11eb-990b-1fc3c66e71c9.png)
 
 ---
 
