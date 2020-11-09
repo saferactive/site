@@ -393,7 +393,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var protocolRegex = /^\/\//;
 var upgrade_protocol = function upgrade_protocol(urlTemplate) {
-  if (protocolRegex.test(urlTemplate)) {
+  if (protocolRegex.try(urlTemplate)) {
     if (window.location.protocol === "file:") {
       // if in a local file, support http
       // http should auto upgrade if necessary
@@ -633,7 +633,7 @@ _htmlwidgets2.default.widget({
         };
 
         // Check if the map is rendered statically (no output binding)
-        if (_htmlwidgets2.default.shinyMode && /\bshiny-bound-output\b/.test(el.className)) {
+        if (_htmlwidgets2.default.shinyMode && /\bshiny-bound-output\b/.try(el.className)) {
 
           map.id = el.id;
 
@@ -2525,7 +2525,7 @@ var Mipmapper = function () {
 
       var i = 0;
       var lastImg = this._layers[0];
-      var testNext = function testNext() {
+      var tryNext = function tryNext() {
         _this.getByIndex(i, function (img) {
           // If current image is invalid (i.e. too small to be rendered) or
           // it's smaller than what we wanted, return the last known good image.
@@ -2535,12 +2535,12 @@ var Mipmapper = function () {
           } else {
             lastImg = img;
             i++;
-            testNext();
+            tryNext();
             return;
           }
         });
       };
-      testNext();
+      tryNext();
     }
   }, {
     key: "getByIndex",

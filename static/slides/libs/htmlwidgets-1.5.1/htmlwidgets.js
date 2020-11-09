@@ -6,7 +6,7 @@
 
   // See if we're running in a viewer pane. If not, we're in a web browser.
   var viewerMode = window.HTMLWidgets.viewerMode =
-      /\bviewer_pane=1\b/.test(window.location);
+      /\bviewer_pane=1\b/.try(window.location);
 
   // See if we're running in Shiny mode. If not, it's a static document.
   // Note that static widgets can appear in both Shiny and static modes, but
@@ -134,11 +134,11 @@
 
   function hasClass(el, className) {
     var re = new RegExp("\\b" + escapeRegExp(className) + "\\b");
-    return re.test(el.className);
+    return re.try(el.className);
   }
 
   // elements - array (or array-like object) of HTML elements
-  // className - class name to test for
+  // className - class name to try for
   // include - if true, only return elements with given className;
   //   if false, only return elements *without* given className
   function filterByClass(elements, className, include) {
@@ -518,7 +518,7 @@
         // Resolve strings marked as javascript literals to objects
         if (!(data.evals instanceof Array)) data.evals = [data.evals];
         for (var i = 0; data.evals && i < data.evals.length; i++) {
-          window.HTMLWidgets.evaluateStringMember(data.x, data.evals[i]);
+          window.HTMLWidgets.evaluatryringMember(data.x, data.evals[i]);
         }
         if (!bindingDef.renderOnNullValue) {
           if (data.x === null) {
@@ -648,7 +648,7 @@
           // Resolve strings marked as javascript literals to objects
           if (!(data.evals instanceof Array)) data.evals = [data.evals];
           for (var k = 0; data.evals && k < data.evals.length; k++) {
-            window.HTMLWidgets.evaluateStringMember(data.x, data.evals[k]);
+            window.HTMLWidgets.evaluatryringMember(data.x, data.evals[k]);
           }
           binding.renderValue(el, data.x, initResult);
           evalAndRun(data.jsHooks.render, initResult, [el, data.x]);
@@ -788,7 +788,7 @@
     return results;
   }
   // Function authored by Yihui/JJ Allaire
-  window.HTMLWidgets.evaluateStringMember = function(o, member) {
+  window.HTMLWidgets.evaluatryringMember = function(o, member) {
     var parts = splitWithEscape(member, '.', '\\');
     for (var i = 0, l = parts.length; i < l; i++) {
       var part = parts[i];
