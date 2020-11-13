@@ -3,7 +3,7 @@ title: "The Propensity to Cycle Tool"
 # subtitle: '`r emojifont::emoji("bike")`<br/>For England and Wales'
 subtitle: '`r emojifont::emoji("bike")`<br/>For England, Wales and beyond'
 author: "Robin Lovelace and Joey Talbot, ITS, University of Leeds"
-date: 'TII Safety Webinar<br/><img class="img-footer" alt="" src="https://www.pct.bike/www/static/01_logos/pct-logo.png"><br/><img class="img-footer" alt="" src="https://www.stephanehess.me.uk/images/picture3.png">'
+date: 'TII Safety Webinar, 2020-11-13<br/><img class="img-footer" alt="" src="https://www.pct.bike/www/static/01_logos/pct-logo.png"><br/><img class="img-footer" alt="" src="https://www.stephanehess.me.uk/images/picture3.png">'
 output:
   xaringan::moon_reader:
     # css: ["default", "its.css"]
@@ -53,6 +53,7 @@ git status
 git commit -am 'Update slides'
 git push
 cd -
+
 ```
 
 
@@ -171,6 +172,17 @@ Uses that were not initially planned
 See [web.tecnico.ulisboa.pt](http://web.tecnico.ulisboa.pt/~rosamfelix/gis/declives/DeclivesLisboa.html) for interactive map
 
 ![](https://user-images.githubusercontent.com/1825120/99063305-389ef700-259c-11eb-94cc-24a85c3858db.png)
+---
+
+background-image: url(https://raw.githubusercontent.com/saferactive/saferactive/master/figures/la-multipliers.gif)
+
+--
+
+## Estimating change in exposure 
+
+### Tackling denominator neglect
+
+![]()
 
 ---
 
