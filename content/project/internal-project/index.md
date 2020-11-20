@@ -6,7 +6,7 @@ tags:
 date: "2016-04-27T00:00:00Z"
 
 # Optional external URL for project (replaces project detail page).
-external_link: "https://saferactive.github.io/rrsrr"
+external_link: "https://itsleeds.github.io/rrsrr/"
 
 image:
   caption: Screenshot of RStudio
@@ -21,4 +21,4 @@ slides: ""
 ---
 
 This book project and training course was funded by the RAC Foundation to support reproducible road safety analysis.
-The free and open source book can be found here: https://saferactive.github.io/rrsrr.
+The free and open source book can be found here: https://itsleeds.github.io/rrsrr/.
