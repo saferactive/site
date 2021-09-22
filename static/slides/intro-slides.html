@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>SaferActive</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="The SaferActive Team" />
+    <script src="libs/header-attrs-2.11/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/robot.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/robot-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# SaferActive
+## 📉🚂🚅🚎🛴🚲🚶📈<br/>Exploring trends in and links between active travel uptake and road safety
+### The SaferActive Team
+### University of Leeds, <a href="https://environment.leeds.ac.uk/transport">Institute for Transport Studies</a>
+### University of Leeds, 2021-10-15 (updated: 2021-09-22) Reproducible source code: <a href="https://github.com/saferactive/saferactive">github.com/saferactive/saferactive</a>
+
+---
+
+
+
+
+
+## Background
+
+![](https://raw.githubusercontent.com/saferactive/saferactive/master/README_files/figure-gfm/trend-1.png)
+
+- Some evidence that policies to enable more walking and cycling have been effective
+- But have walking and cycling become safer?
+  - Where have active travels levels increased and casualty rates fallen?
+  - What are the characteristics of these places and can we learn from them?
+
+---
+
+## Longer term trends
+
+
+```r
+# readRDS("../p1_ggplot_1979_2019.Rds") +
+#   geom_vline(xintercept = as.Date("2010-01-01"))
+```
+
+![](https://user-images.githubusercontent.com/1825120/133630087-863f4f4b-c5ab-4e6a-995e-f1f1c6a11dca.png)
+
+- Numbers of people killed/injured while walking and cycling have mostly 'flatlined' since around 2010
+- But what about the rate of casualties per unit time/population/distance?
+
+---
+
+## The pandemic
+
+![](https://user-images.githubusercontent.com/1825120/133615184-e1782729-9660-4508-8107-2e17ddb49904.png)
+
+- Major changes to travel behaviour, with cycling increasing while other modes of travel are reduced
+- Longer term impacts remain uncertain
+
+---
+
+## Safety during the pandemic
+
+![](https://user-images.githubusercontent.com/1825120/133615412-bc3f3717-5512-4eef-aca2-d08822734b0f.png)
+
+&gt; The DfT thus calculated that the overall casualty rate for cyclists, the number of deaths or injuries per mile travelled, fell by 34% in 2020 against the year before, the biggest drop for any road user type.
+
+- But this change in safety levels was not uniform
+
+---
+
+#### Data on cycling levels
+
+![](https://raw.githubusercontent.com/saferactive/saferactive/master/code/tests/bradford-and-beyond_files/figure-gfm/unnamed-chunk-7-1.png)
+
+All counter values (black lines) and average counter values in sample of local authorities: Bradford, Derby, Leeds, Southampton 
+
+&lt;!-- Reproducible code:  --&gt;
+&lt;!-- See https://github.com/saferactive/saferactive/blob/master/code/tests/bradford-and-beyond.md --&gt;
+
+&lt;!-- Todo: update this plot --&gt;
+
+---
+
+#### Road safety and inequality
+
+![](https://user-images.githubusercontent.com/1825120/134364522-e18b9140-5bbf-43ff-85b0-8374e7088694.png)
+
+Slight, serious, and fatal cycling injury rates by residential IMD quintile and year,
+2014-2019. The error bars show 95% confidence intervals. Source: *Socioeconomic inequalities in cycling safety*, Transport and Health, Vidal Tortosa et al. (2021).
+
+???
+
+This relates to the levelling up agenda
+
+---
+
+#### Approaches
+
+.pull-left[
+
+- Exploratory data analysis
+
+![](https://saferactive.github.io/trafficalmr/articles/spine_aspatial_who_hit_who.png)
+
+- Geographic analysis
+
+![](https://raw.githubusercontent.com/saferactive/saferactive/master/LA_trends_files/figure-gfm/crash_la_plot2-1.png)
+
+]
+
+.pull-right[
+
+- New visualisation techniques
+
+![](https://saferactive.github.io/trafficalmr/articles/rr_cots.png)
+
+- Interactive mapping
+
+![](https://user-images.githubusercontent.com/1825120/133634068-38623752-fc0a-4aab-925e-4b43ab746f73.png)
+
+]
+
+--
+
+- Modelling - more needed in this area - relies on strong explanatory variables
+
+
+---
+
+## Key project outputs
+
+- Datasets
+  - New geo datasets with change in active travel (currently cycling) over time
+  - New geographic datasets on adjusted collision rates over time
+- Research findings
+  - Substantial regional differences in trends for active travel levels, casualty numbers, and the rate of casualties per distance walked and cycled
+
+- New methods
+  - Framework for exploratory analysis of complex datasets for informing policy
+  - Route network processing
+  
+- Software development
+  - Development of the trafficalmr package
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
